@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>College Login Page</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #141e30, #243b55);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .login-box {
+      background: white;
+      padding: 30px;
+      border-radius: 15px;
+      width: 320px;
+      text-align: center;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    }
+
+    .login-box img {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 90%;
+      padding: 12px;
+      margin: 10px 0;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      background: #ff4b1f;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #e63e17;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="login-box">
+
+    <!-- COLLEGE LOGO -->
+    <img src="logo.png" alt="College Logo">
+
+    <h2>College Login</h2>
+
+    <!-- FORMSPREE LOGIN FORM -->
+    <form action="https://formspree.io/f/maqglzvp" method="POST">
+
+      <!-- USERNAME -->
+      <input type="text" name="username" placeholder="Username" required>
+
+      <!-- PASSWORD -->
+      <input type="password" name="password" placeholder="Password" required>
+
+      <!-- LOGIN BUTTON -->
+      <button type="submit">Login</button>
+
+    </form>
+
+  </div>
+
+</body>
+</html>
